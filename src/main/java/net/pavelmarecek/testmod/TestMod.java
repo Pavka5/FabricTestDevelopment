@@ -1,6 +1,7 @@
 package net.pavelmarecek.testmod;
 
 import net.fabricmc.api.ModInitializer;
+import net.pavelmarecek.testmod.block.ModBlocks;
 import net.pavelmarecek.testmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,5 +13,6 @@ public class TestMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
