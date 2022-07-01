@@ -12,6 +12,8 @@ public class ModItems {
     public static final Item PLATINUM_INGOT = registerItem("platinum_ingot",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
+    public static final Item RAW_PLATINUM = registerItem("raw_platinum",
+            new Item(new FabricItemSettings().group(ItemGroup.MATERIALS)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(TestMod.MOD_ID, name), item);

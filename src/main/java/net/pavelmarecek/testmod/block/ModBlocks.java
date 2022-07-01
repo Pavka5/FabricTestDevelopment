@@ -14,7 +14,7 @@ import net.pavelmarecek.testmod.TestMod;
 public class ModBlocks {
 
     public static final Block PLATINUM_ORE = registerBlock("platinum_ore",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ItemGroup.BUILDING_BLOCKS);
+            new Block(FabricBlockSettings.of(Material.STONE).strength(4.5f).requiresTool()), ItemGroup.BUILDING_BLOCKS);
 
     private static Block registerBlock(String name, Block block, ItemGroup group){
         registerBlockItem(name, block, group);
